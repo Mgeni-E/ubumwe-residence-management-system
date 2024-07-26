@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     themeToggle.addEventListener("change", () => {
       if (themeToggle.checked) {
-        body.classList.add("dark-mode");
+        body.classLis.add("dark-mode");
         localStorage.setItem("theme", "dark");
       } else {
         body.classList.remove("dark-mode");
