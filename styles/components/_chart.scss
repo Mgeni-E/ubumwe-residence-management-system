@@ -1,0 +1,9 @@
+/* styles/components/_chart.scss */
+.chart-bar {
+  @apply mt-4 bg-white p-4 rounded-lg shadow-md;
+
+  canvas {
+    width: 100%;
+    height: 400px;
+  }
+}

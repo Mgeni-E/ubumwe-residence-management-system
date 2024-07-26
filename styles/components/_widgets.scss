@@ -1,0 +1,9 @@
+/* styles/components/_widgets.scss */
+.widgets {
+  display: flex;
+  gap: 1rem;
+
+  .widget {
+    @apply bg-blue-100 p-4 rounded-lg shadow-md;
+  }
+}

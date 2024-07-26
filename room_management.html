@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Resident Dashboard</title>
+    <title>Room Management - Student Resident Dashboard</title>
     <link rel="stylesheet" href="styles/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body class="bg-gray-100 text-gray-900 flex flex-col min-h-screen">
     <div class="flex flex-1 flex-col md:flex-row">
@@ -27,7 +26,7 @@
           <ul class="space-y-2">
             <li>
               <a
-                href="#home"
+                href="index.html"
                 class="flex items-center p-2 bg-white text-blue-500 rounded"
               >
                 <i class="fas fa-chart-bar mr-2 text-blue-500"></i> Statistics
@@ -63,11 +62,11 @@
         </nav>
       </aside>
       <!-- Main content -->
-      <div class="flex-1">
+      <div class="flex-1 flex flex-col">
         <header
           class="bg-blue-600 text-white p-4 flex items-center justify-between"
         >
-          <h1 class="text-lg font-bold">Student Resident Dashboard</h1>
+          <h1 class="text-lg font-bold">Room Management</h1>
           <div class="flex items-center">
             <a
               href="notifications.html"
@@ -88,63 +87,44 @@
             </label>
           </div>
         </header>
-        <main class="p-4 bg-gray-100 flex-1">
-          <section id="home">
-            <div
-              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4"
-            >
-              <div class="bg-white p-4 rounded-lg shadow flex items-center">
-                <i class="fas fa-users fa-2x text-blue-500"></i>
-                <div class="ml-4">
-                  <h3 class="text-lg font-semibold text-blue-500">
-                    Total Residents
-                  </h3>
-                  <p class="text-2xl font-bold text-blue-500">150</p>
-                </div>
-              </div>
-              <div class="bg-white p-4 rounded-lg shadow flex items-center">
-                <i class="fas fa-door-open fa-2x text-blue-500"></i>
-                <div class="ml-4">
-                  <h3 class="text-lg font-semibold text-blue-500">
-                    Available Rooms
-                  </h3>
-                  <p class="text-2xl font-bold text-blue-500">20</p>
-                </div>
-              </div>
-              <div class="bg-white p-4 rounded-lg shadow flex items-center">
-                <i class="fas fa-tools fa-2x text-blue-500"></i>
-                <div class="ml-4">
-                  <h3 class="text-lg font-semibold text-blue-500">
-                    Maintenance Requests
-                  </h3>
-                  <p class="text-2xl font-bold text-blue-500">5</p>
-                </div>
-              </div>
-              <div class="bg-white p-4 rounded-lg shadow flex items-center">
-                <i class="fas fa-bell fa-2x text-blue-500"></i>
-                <div class="ml-4">
-                  <h3 class="text-lg font-semibold text-blue-500">
-                    New Notifications
-                  </h3>
-                  <p class="text-2xl font-bold text-blue-500">3</p>
-                </div>
-              </div>
-            </div>
+        <main class="flex-1 p-4 bg-gray-100">
+          <section id="room-management">
             <div class="bg-white p-4 rounded-lg shadow">
               <h2 class="text-xl font-semibold mb-4 text-blue-500">
-                Resident Statistics
+                Room Management
               </h2>
-              <canvas id="myChart"></canvas>
+              <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                  <thead class="bg-gray-50">
+                    <tr>
+                      <th
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Student Name
+                      </th>
+                      <th
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Room Number
+                      </th>
+                      <th
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Room Type
+                      </th>
+                      <th
+                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Status
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="bg-white divide-y divide-gray-200">
+                    <!-- Data rows will be added here dynamically -->
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </section>
-          <section id="room-management" class="hidden">
-            <!-- Room management content -->
-          </section>
-          <section id="maintenance-requests" class="hidden">
-            <!-- Maintenance request content -->
-          </section>
-          <section id="notifications" class="hidden">
-            <!-- Notification content -->
           </section>
         </main>
         <footer class="bg-gray-200 text-gray-900 p-4 text-center">
@@ -154,6 +134,8 @@
     </div>
     <script src="js/main.js"></script>
     <script src="js/theme.js"></script>
-    <script src="js/chart.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", loadRoomManagementData);
+    </script>
   </body>
 </html>

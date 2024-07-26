@@ -1,0 +1,18 @@
+aside {
+  @apply w-64 bg-blue-800 text-white h-screen p-4;
+}
+
+nav ul {
+  @apply space-y-2;
+}
+
+nav a {
+  @apply flex items-center p-2 bg-blue-600 rounded;
+  &.active {
+    @apply bg-blue-700;
+  }
+}
+
+nav svg {
+  @apply h-6 w-6 mr-2;
+}

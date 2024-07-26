@@ -1,0 +1,103 @@
+@import "components/header";
+@import "components/sidebar";
+@import "components/footer";
+@import "components/widgets";
+@import "components/chart";
+
+body {
+    @apply bg-white text-gray-900;
+    &.dark-mode {
+        @apply bg-gray-900 text-white;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.toggle-checkbox:checked + .toggle-label .dot {
+    transform: translateX(100%);
+    background-color: #3e35e7;
+}
+
+.toggle-checkbox:checked + .toggle-label .bg {
+    background-color: #4f46e5;
+}
+
+.grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4;
+}
+
+.bg-white {
+    @apply bg-white dark:bg-gray-800;
+}
+
+
+// Variables
+$bg-color-light: #f3f4f6;
+$text-color-light: #1f2937;
+$bg-color-dark: #1f2937;
+$text-color-dark: #f3f4f6;
+
+// Light mode styles
+.light-mode {
+  background-color: $bg-color-light;
+  color: $text-color-light;
+}
+
+.bg-gray-100.light-mode {
+  background-color: $bg-color-light;
+}
+
+.text-gray-900.light-mode {
+  color: $text-color-light;
+}
+
+// Dark mode styles
+.dark-mode {
+  background-color: $bg-color-dark;
+  color: $text-color-dark;
+}
+
+.bg-gray-100.dark-mode {
+  background-color: $bg-color-dark;
+}
+
+.text-gray-900.dark-mode {
+  color: $text-color-dark;
+}
+
+// General styles
+body {
+  @apply bg-gray-100 text-gray-900 flex flex-col min-h-screen;
+}
+
+header {
+  @apply bg-blue-600 text-white p-4 flex items-center justify-between;
+}
+
+footer {
+  @apply bg-gray-200 text-gray-900 p-4 text-center;
+}
+
+aside {
+  @apply w-full md:w-64 bg-blue-500 text-white h-auto md:h-screen p-4;
+}
+
+nav ul {
+  @apply space-y-2;
+}
+
+nav ul li a {
+  @apply flex items-center p-2 bg-white text-blue-500 rounded;
+}
+
+nav ul li a .fas {
+  @apply mr-2 text-blue-500;
+}
+
+main {
+  @apply p-4 bg-gray-100 flex-1;
+}
+
+// Other styles can be added similarly

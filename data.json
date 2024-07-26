@@ -1,0 +1,67 @@
+{"rooms": [
+    {
+      "studentName": "John Doe",
+      "roomNumber": "101",
+      "roomType": "Single",
+      "status": "Occupied"
+    },
+    {
+      "studentName": "Jane Smith",
+      "roomNumber": "102",
+      "roomType": "Double",
+      "status": "Vacant"
+    },
+    {
+      "studentName": "Emily Johnson",
+      "roomNumber": "103",
+      "roomType": "Suite",
+      "status": "Occupied"
+    },
+    {
+      "studentName": "Michael Brown",
+      "roomNumber": "104",
+      "roomType": "Single",
+      "status": "Under Maintenance"
+    }
+  ],
+  "requests": [
+    {
+        "date": "2024-07-20",
+        "roomNumber": "101",
+        "description": "Leaky faucet in the bathroom",
+        "status": "Pending"
+      },
+      {
+        "date": "2024-07-21",
+        "roomNumber": "102",
+        "description": "Air conditioner not working",
+        "status": "In Progress"
+      },
+      {
+        "date": "2024-07-22",
+        "roomNumber": "103",
+        "description": "Broken window",
+        "status": "Completed"
+      }
+  ],
+  "notifications": 
+  [
+    {
+      "type": "alert",
+      "message": "Room 101 needs immediate maintenance."
+    },
+    {
+      "type": "notification",
+      "message": "Room 102 maintenance completed successfully."
+    },
+    {
+      "type": "alert",
+      "message": "Fire drill scheduled for tomorrow at 10 AM."
+    },
+    {
+      "type": "notification",
+      "message": "New policy updates have been added."
+    }
+  ]  
+}
+  
