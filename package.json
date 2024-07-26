@@ -1,0 +1,20 @@
+{
+  "name": "ubumwe-residence-management-system",
+  "version": "1.0.0",
+  "description": "Welcome to the final summative project of the Advanced Front-End module.  This group project challenges you to showcase your advanced  front-end development skills by building a dynamic and user-friendly  dashboard for a university residence management system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "postcss styles/input.css -o styles/main.css",
+    "watch:css": "postcss styles/input.css -o styles/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.40",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.7"
+  }
+}
