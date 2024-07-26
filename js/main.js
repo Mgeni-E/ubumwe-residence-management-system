@@ -10,7 +10,7 @@ document.querySelectorAll('aside nav a').forEach(link => {
 });
 
 document.getElementById('menu-toggle').addEventListener('click', function() {
-    const sidebarMenu = document.getElementById('sidebar-menu');
+    const sidebarMen = document.getElementById('sidebar-menu');
     sidebarMenu.classList.toggle('hidden');
   });
 
