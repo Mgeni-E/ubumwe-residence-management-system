@@ -78,3 +78,27 @@ function loadNotificationsData() {
       })
       .catch(error => console.error('Error fetching notifications data:', error));
   }
+
+
+// Current Date && Time
+function updateTime(){
+  const now = new Date()
+  const currentTime = document.querySelector("#current-time");
+  const date = document.getElementById("date");
+
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0'); 
+  const day = String(now.getDate()).padStart(2, '0');
+  date.innerText =  month + "/" + day + "/" + year
+  
+  let hours = now.getHours();
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+  hours = hours % 12;
+  hours = hours ? hours : 12; 
+  currentTime.innerText = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+}
+setInterval(updateTime, 1000);
+
+

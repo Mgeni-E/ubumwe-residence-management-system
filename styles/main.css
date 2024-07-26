@@ -786,3 +786,16 @@ video {
     background-color: rgb(17 24 39 / var(--tw-bg-opacity));
   }
 }
+
+
+
+
+/* DATE &&& TIME  */
+
+.date-Time{
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-around;
+  width: 80%;
+  font-size: 16px;
+}
