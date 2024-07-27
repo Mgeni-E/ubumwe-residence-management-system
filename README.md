@@ -22,6 +22,10 @@ The dashboard should provide functionalities like:
     requests submitted by residents. Include functionalities like filtering by room, 
     status (pending, ongoing, completed), and adding notes.
 
+![Dark-theme](https://github.com/user-attachments/assets/558e4aae-4a48-4452-a9f4-ca7760e7d279)
+![light-theme](https://github.com/user-attachments/assets/44479e2a-dbaf-4cab-8d5e-d6f4e4b38d13)
+
+
     4.Alerts and Notifications: Display important alerts and notifications for staff, 
     such as upcoming room inspections, maintenance deadlines, or urgent resident requests.
 
