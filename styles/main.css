@@ -793,6 +793,71 @@ video {
   display: flex;
   margin-bottom: 1rem;
   justify-content: space-around;
-  width: 80%;
+  width: 90%;
   font-size: 16px;
+}
+
+
+
+/* DARK THEME */
+body.dark-mode {
+  background-color: #1a202c;
+  color: #a0aec0;
+}
+
+body.dark-mode .bg-gray-100 {
+  background-color: #2d3748;
+}
+
+body.dark-mode .text-gray-900 {
+  color: #cbd5e0;
+}
+
+body.dark-mode .bg-gray-200 {
+  background-color: #4a5568;
+}
+
+body.dark-mode .bg-white {
+  background-color: #2d3748;
+  color: #e2e8f0;
+}
+
+body.dark-mode .text-blue-500 {
+  color: #63b3ed;
+}
+
+body.dark-mode .bg-gray-50 {
+  background-color: #4a5568;
+}
+
+body.dark-mode .text-gray-500 {
+  color: #a0aec0;
+}
+
+body.dark-mode .divide-gray-200 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #718096;
+}
+
+
+body.dark-mode header{
+  /* background: #00BFFF; */
+  /* background: black; */
+  background: #0CAFFF;
+}
+
+body.dark-mode aside{
+  /* background: #0CAFFF; */
+  background: black;
+}
+
+body.dark-mode .fa-bell{
+  color: #fff;
+}
+
+.fa-sun{
+  display: block;
+}
+
+.fa-moon{
+  display: block;
 }
