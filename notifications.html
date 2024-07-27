@@ -19,13 +19,12 @@
         class="w-full md:w-64 bg-blue-500 text-white h-auto md:h-screen p-4"
       >
         <div class="flex items-center justify-between mb-6 md:justify-start">
-          <h1 class="text-lg font-bold">Dashboard</h1>
+          <h1 class="text-lg font-bold dark:text-gray-700">Dashboard</h1>
           <button id="menu-toggle" class="md:hidden text-white">
             <i class="fas fa-bars"></i>
           </button>
         </div>
-        
-        <div class="date-Time">
+        <div class="date-Time dark:text-gray-600">
           <p class="date">Date</p>
           <p class="current-time">Time</p>
         </div>
@@ -34,7 +33,7 @@
             <li>
               <a
                 href="index.html"
-                class="flex items-center p-2 bg-white text-blue-500 rounded"
+                class="flex items-center p-2 bg-white dark:bg-gray-600 text-blue-500 rounded"
               >
                 <i class="fas fa-chart-bar mr-2 text-blue-500"></i> Statistics
               </a>
@@ -42,7 +41,7 @@
             <li>
               <a
                 href="room_management.html"
-                class="flex items-center p-2 bg-white text-blue-500 rounded"
+                class="flex items-center p-2 bg-white dark:bg-gray-600 text-blue-500 rounded"
               >
                 <i class="fas fa-door-open mr-2 text-blue-500"></i> Room
                 Management
@@ -51,7 +50,7 @@
             <li>
               <a
                 href="maintenance_requests.html"
-                class="flex items-center p-2 bg-white text-blue-500 rounded"
+                class="flex items-center p-2 bg-white dark:bg-gray-600 text-blue-500 rounded"
               >
                 <i class="fas fa-tools mr-2 text-blue-500"></i> Maintenance
                 Requests
@@ -60,7 +59,7 @@
             <li>
               <a
                 href="notifications.html"
-                class="flex items-center p-2 bg-white text-blue-500 rounded"
+                class="flex items-center p-2 bg-white dark:bg-gray-600 text-blue-500 rounded"
               >
                 <i class="fas fa-bell mr-2 text-blue-500"></i> Notifications
               </a>
@@ -71,32 +70,32 @@
       <!-- Main content -->
       <div class="flex-1 flex flex-col">
         <header
-          class="bg-blue-600 text-white p-4 flex items-center justify-between"
+          class="bg-blue-600 text-white dark:text-gray-700 p-4 flex items-center justify-between"
         >
           <h1 class="text-lg font-bold">Notifications</h1>
           <div class="flex items-center">
             <a
               href="notifications.html"
-              class="mr-4 p-2 bg-gray-100 text-blue-600 rounded-full"
+              class="mr-4 p-2 bg-gray-100 dark:bg-gray-600 text-blue-600 rounded-full"
             >
               <i class="fas fa-bell"></i>
             </a>
             <label for="theme-toggle" class="flex items-center cursor-pointer">
               <div class="relative">
                 <input id="theme-toggle" type="checkbox" class="sr-only" />
-                <div
-                  class="w-10 h-4 bg-gray-400 rounded-full shadow-inner"
-                ></div>
-                <div
-                  class="dot absolute w-6 h-6 bg-white rounded-full shadow -left-1 -top-1 transition"
-                ></div>
+                <div class="sun cursor-pointer dark:text-gray-700">
+                  <i class="fa-regular fa-sun"></i>
+                </div>
+                <div class="moon cursor-pointer dark:text-gray-700">
+                  <i class="fa-regular fa-moon"></i>
+                </div>
               </div>
             </label>
           </div>
         </header>
-        <main class="flex-1 p-4 bg-gray-100">
+        <main class="flex-1 p-4 bg-gray-100 dark:bg-gray-700">
           <section id="notifications">
-            <div class="bg-white p-4 rounded-lg shadow">
+            <div class="bg-white dark:bg-gray-600 p-4 rounded-lg shadow">
               <h2 class="text-xl font-semibold mb-4 text-blue-500">
                 Notifications & Alerts
               </h2>
@@ -106,7 +105,9 @@
             </div>
           </section>
         </main>
-        <footer class="bg-gray-200 text-gray-900 p-4 text-center">
+        <footer
+          class="bg-gray-200 dark:bg-gray-800 dark:text-white text-gray-900 p-4 text-center"
+        >
           <p>&copy; 2024 Student Resident Dashboard</p>
         </footer>
       </div>
