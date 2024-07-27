@@ -5,33 +5,32 @@
 @import "components/chart";
 
 body {
-    @apply bg-white text-gray-900;
-    &.dark-mode {
-        @apply bg-gray-900 text-white;
-    }
+  @apply bg-white text-gray-900;
+  &.dark-mode {
+    @apply bg-gray-900 text-white;
+  }
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .toggle-checkbox:checked + .toggle-label .dot {
-    transform: translateX(100%);
-    background-color: #3e35e7;
+  transform: translateX(100%);
+  background-color: #3e35e7;
 }
 
 .toggle-checkbox:checked + .toggle-label .bg {
-    background-color: #4f46e5;
+  background-color: #4f46e5;
 }
 
 .grid {
-    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4;
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4;
 }
 
 .bg-white {
-    @apply bg-white dark:bg-gray-800;
+  @apply bg-white dark:bg-gray-800;
 }
-
 
 // Variables
 $bg-color-light: #f3f4f6;
@@ -98,6 +97,11 @@ nav ul li a .fas {
 
 main {
   @apply p-4 bg-gray-100 flex-1;
+}
+
+// Custom styles
+.display-none {
+  @apply hidden;
 }
 
 // Other styles can be added similarly

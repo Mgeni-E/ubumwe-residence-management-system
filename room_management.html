@@ -14,12 +14,10 @@
     <div class="flex flex-1 flex-col md:flex-row">
       <!-- Sidebar -->
       <aside
-        class="w-full md:w-64 bg-blue-500 text-white h-auto md:h-screen p-4"
+        class="w-full md:w-64 bg-blue-500 text-white dark:text-gray-700 h-auto md:h-screen p-4"
       >
         <div class="flex items-center justify-between mb-6 md:justify-start">
           <h1 class="text-lg font-bold">Dashboard</h1>
-          
-
           <button id="menu-toggle" class="md:hidden text-white">
             <i class="fas fa-bars"></i>
           </button>
@@ -27,13 +25,15 @@
         <div class="date-Time">
           <p id="date"></p>
           <p id="current-time"></p>
+          <p class="date">Date</p>
+          <p class="current-time">Time</p>
         </div>
         <nav id="sidebar-menu" class="md:block hidden">
           <ul class="space-y-2">
             <li>
               <a
                 href="index.html"
-                class="flex items-center p-2 bg-white text-blue-500 rounded"
+                class="flex items-center p-2 bg-white dark:bg-gray-600 text-blue-500 rounded"
               >
                 <i class="fas fa-chart-bar mr-2 text-blue-500"></i> Statistics
               </a>
@@ -41,7 +41,7 @@
             <li>
               <a
                 href="room_management.html"
-                class="flex items-center p-2 bg-white text-blue-500 rounded"
+                class="flex items-center p-2 bg-white dark:bg-gray-600 text-blue-500 rounded"
               >
                 <i class="fas fa-door-open mr-2 text-blue-500"></i> Room
                 Management
@@ -50,7 +50,7 @@
             <li>
               <a
                 href="maintenance_requests.html"
-                class="flex items-center p-2 bg-white text-blue-500 rounded"
+                class="flex items-center p-2 bg-white dark:bg-gray-600 text-blue-500 rounded"
               >
                 <i class="fas fa-tools mr-2 text-blue-500"></i> Maintenance
                 Requests
@@ -59,7 +59,7 @@
             <li>
               <a
                 href="notifications.html"
-                class="flex items-center p-2 bg-white text-blue-500 rounded"
+                class="flex items-center p-2 bg-white dark:bg-gray-600 text-blue-500 rounded"
               >
                 <i class="fas fa-bell mr-2 text-blue-500"></i> Notifications
               </a>
@@ -70,13 +70,13 @@
       <!-- Main content -->
       <div class="flex-1 flex flex-col">
         <header
-          class="bg-blue-600 text-white p-4 flex items-center justify-between"
+          class="bg-blue-600 text-white dark:text-gray-700 p-4 flex items-center justify-between"
         >
           <h1 class="text-lg font-bold">Room Management</h1>
           <div class="flex items-center">
             <a
               href="notifications.html"
-              class="mr-4 p-2 bg-gray-100 text-blue-600 rounded-full"
+              class="mr-4 p-2 bg-gray-100 dark:bg-gray-600 text-blue-600 rounded-full"
             >
               <i class="fas fa-bell"></i>
             </a>
@@ -89,15 +89,15 @@
             
           </div>
         </header>
-        <main class="flex-1 p-4 bg-gray-100">
+        <main class="flex-1 p-4 bg-gray-100 dark:bg-gray-700">
           <section id="room-management">
-            <div class="bg-white p-4 rounded-lg shadow">
+            <div class="bg-white dark:bg-gray-600 p-4 rounded-lg shadow">
               <h2 class="text-xl font-semibold mb-4 text-blue-500">
                 Room Management
               </h2>
               <div class="overflow-x-auto">
                 <table class="min-w-full divide-y divide-gray-200">
-                  <thead class="bg-gray-50">
+                  <thead class="bg-gray-50 dark:bg-gray-200">
                     <tr>
                       <th
                         class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
@@ -121,7 +121,9 @@
                       </th>
                     </tr>
                   </thead>
-                  <tbody class="bg-white divide-y divide-gray-200">
+                  <tbody
+                    class="bg-white dark:bg-gray-500 divide-y divide-gray-200"
+                  >
                     <!-- Data rows will be added here dynamically -->
                   </tbody>
                 </table>
@@ -129,7 +131,9 @@
             </div>
           </section>
         </main>
-        <footer class="bg-gray-200 text-gray-900 p-4 text-center">
+        <footer
+          class="bg-gray-200 dark:bg-gray-800 dark:text-white text-gray-900 p-4 text-center"
+        >
           <p>&copy; 2024 Student Resident Dashboard</p>
         </footer>
       </div>
